@@ -1,5 +1,6 @@
 <?php
-	include_once 'CKeyGen.php';
-	header("Content-type:text/xml");
-	$kg=new CKeyGen();
+	include_once 'ckeygen.php';
+	header("Content-Type:text/xml");
+	$kg = new ckeygen();
+	echo $kg->keyAsXML();
 ?>

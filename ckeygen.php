@@ -36,16 +36,16 @@
 		public function keyAsXML()
 		{
 			$xml=new SimpleXMLElement("<chave></chave>");
-			$xml->addChild("numeros");
-			$xml->addChild("estrelas");
+			$xmlN->addChild("numeros");
+			$xmlS->addChild("estrelas");
 			foreach ($this->numbers as $thenumber) {
 				$xmlN->addChild("num",$thenumber);
 			}
-			foreach ($this->numbers as $thestar) {
+			foreach ($this->stars as $thestar) {
 				$xmlS->addChild("num",$thestar);
 			}
-			$xml->numeros[0]->addChild("num",5);
-			echo $xml->asXML();
+			
+			return $xml->asXML();
 		}
 		
 		public function key2UL($class, $key){
