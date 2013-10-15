@@ -31,7 +31,21 @@
 			$html.=$this->key2UL("stars", $this->stars);
 			$html.="</div>";
 			return $html;
+		}
 			
+		public function keyAsXML()
+		{
+			$xml=new SimpleXMLElement("<chave></chave>");
+			$xml->addChild("numeros");
+			$xml->addChild("estrelas");
+			foreach ($this->numbers as $thenumber) {
+				$xmlN->addChild("num",$thenumber);
+			}
+			foreach ($this->numbers as $thestar) {
+				$xmlS->addChild("num",$thestar);
+			}
+			$xml->numeros[0]->addChild("num",5);
+			echo $xml->asXML();
 		}
 		
 		public function key2UL($class, $key){
