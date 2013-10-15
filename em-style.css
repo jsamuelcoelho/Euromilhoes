@@ -1,0 +1,33 @@
+/* euro milhoes generator */
+
+body {
+	background-color: rgb(88,88,255);
+	/* #123CCC */
+	color: #80ff00;
+	font-family: "Bookman Old Style"; 
+}
+
+li {
+	
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	border-radius:12px;
+	border-style:solid;
+	border-color:black;
+	background-color:pink;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	
+}
+
+ul{
+	display: inline-block;
+	
+}
+
+ul.stars li{
+	background-color: #ffffff;
+	
+}
